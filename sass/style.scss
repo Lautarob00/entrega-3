@@ -1,0 +1,1768 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--- HEADER INICIO ---*/
+
+header {
+    background-color: #E6DCD3;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .navbar-brand {
+        padding: 5px;
+    }
+    .navbar-brand img {
+        height: 70px;
+    }
+    .nav-item {
+        padding: 10px;
+    }
+    .nav-item.dropdown {
+        border: 1px solid #AB9D92;
+    }
+    .nav-item.nav-item.dropdown {
+        &:hover {
+            color: #AB9D92;
+        }
+    }
+    .nav-item a {
+        color: #F4F4F4;
+        font-size: 20px;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+/*--- MAIN INICIO ---*/
+
+.seccionPrincipal {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20px 20px;
+    h2 {
+        background-color: #E6DCD3;
+        color: white;
+        padding: 15px;
+        font-size: 24px;
+        align-self: center;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    p {
+        color: #373737;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+
+.coaching {
+    background-color: transparent;
+    .coachingTitulo {
+        background-image: url(../assets/copia-coaching-sass.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        margin: 20px;
+        border-radius: 5px;
+        h2 {
+            color: #E9E9E9;
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    .coachingDescripcion {
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
+}
+
+.contenedorImagenes {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 25px;
+    padding: 30px;
+    .imagenes {
+        background-color: #58534E;
+        width: 250px;
+        height: 300px;
+        margin: 5px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.450);
+        .cardImagen {
+            width: 100%;
+            height: 60%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .cardInfo {
+            padding: 20px;
+            text-align: center;
+            h3 {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            button {
+                background-color: #75706F;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin: 5px;
+                padding: 5px;
+                border: #3F352C;
+                border-radius: 5px;
+            }
+            a {
+                color: #E6DCD3;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.descripcion-2 {
+    background-color: #75706F;
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+.seccionBeneficios {
+    padding-bottom: 40px;
+    .coachingBeneficios {
+        background-color: #E9E9E9;
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        h3 {
+            padding: 15px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        ul {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        li {
+            padding: 10px;
+            font-size: 20px;
+        }
+    }
+}
+
+/*--- FOOTER INICIO ---*/
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #E6DCD3;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    p {
+        font-size: 18px;
+        align-self: center;
+    }
+    ul li a img {
+        height: 40px;
+    }
+    #iconos {
+        list-style-type: none;
+        display: flex;
+    }
+    #iconos li {
+        padding: 15px;
+    }
+}
+
+
+/*--- NOSOTROS MAIN ---*/
+.seccion-1 {
+    margin: 30px;
+    .cardContenido {
+        background: #AB9D92;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .imagenMision {
+            align-self: center;
+            img {
+                width: 450px;
+                height: 400px;
+                margin: 20px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+        .infoMision {
+            margin: 40px;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            align-self: center;
+            h2 {
+                color: #E6DCD3;
+                padding: 10px;
+                font-size: 25px;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+            p {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.seccion-2 {
+    margin: 30px;
+    padding-bottom: 30px;
+    .cardContenido {
+        background: #AB9D92;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .imagenVision {
+            align-self: center;
+            img {
+                width: 450px;
+                height: 400px;
+                margin: 20px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+        .infoVision {
+            margin: 40px;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            align-self: center;
+            h2 {
+                color: #E6DCD3;
+                padding: 10px;
+                font-size: 25px;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+            p {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+    }
+}
+.seccion-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    .divisorImagen img {
+        height: 75px;
+        margin: 20px;
+        padding: 5px;
+    }
+    .divisorMision {
+        margin: 25px;
+        align-self: center;
+        h3 {
+            color: #AB9D92;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            padding: 5px;
+        }
+    }
+}
+
+.seccion-4 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    .divisorImagen img {
+        height: 75px;
+        margin: 20px;
+        padding: 5px;
+    }
+    .divisorVision {
+        margin: 20px;
+        align-self: center;
+        h3 {
+            color: #AB9D92;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            padding: 5px;
+        }
+    }
+}
+
+
+/*--- NUTRICION ---*/
+.carousel-item {
+    h5 {
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+    }
+}
+.seccionNutrientes {
+    margin: 15px;
+    padding: 30px 30px;
+    text-align: center;
+    h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: underline;
+    }
+    #divisorNutrientes {
+        display: flex;
+        height: 250px;
+        padding: 10px;
+        align-items: center;
+        div {
+            background-color: #E9E9E9;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 4px;
+            h3 {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 22px;
+                font-weight: bold;
+                color: #3F352C;
+            }
+            p {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.seccionAprender {
+    background-color: #AB9D92;
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+    h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 10px;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    article {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+#accordionExample {
+    margin: 15px;
+    padding: 20px 20px;
+    .accordion-item {
+        padding: 10px;
+        .accordion-button {
+            font-size: 18px;
+        }
+    }
+}
+
+
+/*--- EJERCICIO ---*/ 
+.articuloPrimero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .infoArticulo {
+        margin: 25px;
+        text-align: center;
+        align-self: center;
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            padding: 5px;
+        }
+    }
+    .imagenArticulo {
+        margin: auto;
+        img {
+            width: 400px;
+            height: 450px;
+            margin: 15px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+}
+
+.articuloSegundo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    .beneficios {
+        background-color: #F2F2F1;
+        margin: 20px;
+        border: 1px solid;
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            text-decoration: underline;
+            padding: 10px;
+        }
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            padding: 15px;
+        }
+    }
+    .riesgos {
+        background-color: #F2F2F1;
+        margin: 20px;
+        border: 1px solid;
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            text-decoration: underline;
+            padding: 10px;
+        }
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            padding: 15px;
+        }
+    }
+}
+
+.secundarioEjercicio {
+    background-color: #75706F;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+.contenedorEjercicio {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    .imagenEjercicio {
+        background-color: #75706F;
+        width: 275px;
+        height: 325px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px;
+        .cardEjercicio {
+            width: 100%;
+            height: 60%;
+            img {
+                width: 100%;
+                height: 100%;
+                margin-top: 1px;
+                object-fit: cover;
+            }
+        }
+        .infoEjercicio {
+            padding: 10px;
+            text-align: center;
+            h3 {
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            button {
+                background: #282623;
+                color: #F1F1F1;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin: 5px;
+                padding: 5px;
+                border-radius: 5px;
+                &:hover {
+                    color: #AB9D92;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+/*--- CONTACTO ---*/
+form {
+    background: #EEEEEE;
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    .tituloFormulario {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    input, textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 5px;
+        font-size: 15px;
+        box-sizing: border-box;
+    }
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+    #boton {
+        background: slategray;
+        color: #FFFFFF;
+        padding: 7px;
+        &:hover {
+            cursor: pointer;
+            color: #E9E9E9;
+        }
+    }
+}
+
+.ventas {
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .ventasInfo {
+        background: #EEEEEE;
+        width: 350px;
+        margin: auto;
+        text-align: center;
+        align-self: center;
+        border: 1px solid black;
+        h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 15px;
+        }
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            padding: 10px;
+        }
+    }
+    .mapa {
+        margin: auto;
+    }
+}
+
+
+/*--- MEDIA QUERIES INICIO ---*/
+@media (max-width:1024px) {
+    .seccionBeneficios{
+        background-color: transparent;
+        .coachingBeneficios {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:869px) {
+    .contenedorImagenes {
+        margin: 20px;
+        padding: 25px;
+        .imagenes {
+            .cardInfo {
+                padding: 15px;
+                h3 {
+                    font-size: 17px;
+                }
+                button {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .seccionBeneficios {
+        .coachingBeneficios {
+            width: 55%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        justify-content: start;
+        .navbar.navbar-expand-lg {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .seccionPrincipal {
+        margin: 30px;
+        padding: 15px 15px;
+        h2 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 18px;
+            padding-top: 25px;
+        }
+    }
+    .coaching {
+        .coachingTitulo {
+            height: 350px;
+            h2 {
+                font-size: 17px;
+            }
+        }
+        .coachingDescripcion {
+            font-size: 18px;
+            padding: 15px;
+        }
+    }
+    .contenedorImagenes {
+        margin: 20px;
+        padding: 25px;
+        .imagenes {
+            .cardInfo {
+                padding: 15px;
+                h3 {
+                    font-size: 17px;
+                }
+                button {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .descripcion-2 {
+        margin: 35px;
+        padding: 15px;
+        h3 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 18px;
+            padding: 5px;
+        }
+    }
+    .seccionBeneficios {
+        .coachingBeneficios {
+            width: 60%;
+            h3 {
+                font-size: 22px;
+                padding: 10px;
+            }
+            .listaBeneficios {
+                li {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    footer p {
+        font-size: 17px;
+    }
+}
+
+@media (min-width:426px) and (max-width:756px) {
+    .contenedorImagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:426px) and (max-width:656px) {
+    .seccionBeneficios {
+        .coachingBeneficios {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .container-fluid {
+        flex-direction: column;
+        .navbar-brand {
+            img {
+                height: 50px;
+                position: relative;
+                left: 8px;
+            }
+        }
+        #navbarNavDropdown {
+            .navbar-nav {
+                .nav-item {
+                    padding: 5px;
+                    .nav-link {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .seccionPrincipal {
+        margin: 20px;
+        padding: 10px 10px;
+        h2 {
+            font-size: 18px;
+            padding: 10px;
+        }
+        p {
+            font-size: 16px;
+            padding-top: 15px;
+        }
+    }
+    .coaching {
+        .coachingTitulo {
+            height: 250px;
+            h2 {
+                font-size: 15px;
+            }
+        }
+        .coachingDescripcion {
+            font-size: 16px;
+        }
+    }
+    .contenedorImagenes {
+        margin: 15px;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        .imagenes {
+            width: 200px;
+            height: 250px;
+            margin: 10px;
+            .cardInfo {
+                padding: 10px;
+                h3 {
+                    font-size: 16px;
+                }
+                button {
+                    padding: 4px;
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .descripcion-2 {
+        margin: 25px;
+        h3 {
+            display: none;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .seccionBeneficios {
+        display: none;
+    }
+    footer {
+        flex-direction: column;
+        p {
+            font-size: 16px;
+        }
+        #iconos {
+            justify-content: center;
+            li {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .container-fluid {
+        .navbar-brand {
+            img {
+                display: none;
+            }
+        }
+    }
+    .seccionPrincipal {
+        margin: 10px;
+        h2 {
+            font-size: 17px;
+        }
+        p {
+            font-size: 15px;
+            padding-top: 10px;
+        }
+    }
+    .coaching {
+        .coachingTitulo {
+            height: 225px;
+            h2 {
+                font-size: 14px;
+                text-transform: none;
+            }
+        }
+        .coachingDescripcion {
+            font-size: 15px;
+        }
+    }
+    .contenedorImagenes {
+        margin: 10px;
+        padding: 10px;
+        .imagenes {
+            height: 225px;
+            .cardInfo {
+                padding: 20px;
+                h3 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .descripcion-2 {
+        margin: 20px;
+        p {
+            font-size: 15px;
+            padding: 0;
+        }
+    }
+    footer p {
+        font-size: 15px;
+    }
+}
+
+
+/*--- MEDIA QUERIES NOSOTROS ---*/
+@media (min-width:895px) and (max-width:925px) {
+    .seccion-1 {
+        margin: 25px;
+        .cardContenido {
+            .infoMision {
+                margin: 35px;
+            }
+        }
+        }
+    .seccion-2 {
+        margin: 25px;
+        .cardContenido {
+            .infoVision {
+                margin: 35px;
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:894px) {
+    .seccion-1 {
+        margin: 25px;
+        .cardContenido {
+            flex-direction: column;
+            .infoMision {
+                margin: 35px;
+                padding: 10px;
+            }
+        }
+    }
+    .seccion-2 {
+        margin: 25px;
+        .cardContenido {
+            flex-direction: column;
+            .infoVision {
+                margin: 35px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .seccion-1 {
+        margin: 20px;
+        .cardContenido {
+            flex-direction: column;
+            .imagenMision {
+                img {
+                    width: 400px;
+                    height: 350px;
+                }
+            }
+            .infoMision {
+                margin: 30px;
+                padding: 10px;
+                h2 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 18px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .seccion-2 {
+        margin: 20px;
+        .cardContenido {
+            flex-direction: column;
+            .imagenVision {
+                img {
+                    width: 400px;
+                    height: 350px;
+                }
+            }
+            .infoVision {
+                margin: 30px;
+                padding: 10px;
+                h2 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 18px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .seccion-3 {
+        .divisorImagen {
+            img {
+                height: 65px;
+                margin: 15px;
+            }
+        }
+        .divisorMision {
+            margin: 20px;
+            h3 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .seccion-4 {
+        .divisorImagen {
+            img {
+                height: 65px;
+                margin: 15px;
+            }
+        }
+        .divisorVision {
+            margin: 20px;
+            h3 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width:426px) and (max-width:526px) {
+    .seccion-1 {
+        margin: 15px;
+        .cardContenido {
+            .imagenMision {
+                img {
+                    width: 350px;
+                    height: 300px;
+                }
+            }
+            .infoMision {
+                margin: 20px;
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .seccion-2 {
+        margin: 15px;
+        .cardContenido {
+            .infoVision {
+                margin: 20px;
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 17px;
+                }
+            }
+            .imagenVision {
+                img {
+                    width: 350px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+    .seccion-3 {
+        .divisorImagen {
+            img {
+                height: 60px;
+                margin: 10px;
+            }
+        }
+        .divisorMision {
+            margin: 15px;
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+    .seccion-4 {
+        .divisorImagen {
+            img {
+                height: 60px;
+                margin: 10px;
+            }
+        }
+        .divisorVision {
+            margin: 15px;
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .seccion-1 {
+        margin: 10px;
+        .cardContenido {
+            .imagenMision {
+                img {
+                    width: 300px;
+                    height: 250px;
+                    margin: 10px;
+                }
+            }
+            .infoMision {
+                margin: 10px;
+                padding: 5px;
+                h2 {
+                    font-size: 18px;
+                    padding: 0;
+                }
+                p {
+                    font-size: 16px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .seccion-2 {
+        margin: 10px;
+        .cardContenido {
+            .imagenVision {
+                img {
+                    width: 300px;
+                    height: 250px;
+                    margin: 10px;
+                }
+            }
+            .infoVision {
+                margin: 10px;
+                padding: 5px;
+                h2 {
+                    font-size: 18px;
+                    padding: 0;
+                }
+                p {
+                    font-size: 16px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .seccion-3 {
+        .divisorImagen {
+            display: none;
+        }
+        .divisorMision {
+            margin: 10px;
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+    .seccion-4 {
+        .divisorImagen {
+            display: none;
+        }
+        .divisorVision {
+            margin: 10px;
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/*--- MEDIA QUERIES NUTRICION ---*/
+@media (min-width:769px) and (max-width:859px) {
+    .seccionNutrientes {
+        margin: 10px;
+        padding: 25px 25px;
+        #divisorNutrientes {
+            flex-direction: column;
+            justify-content: center;
+            height: 350px;
+            div {
+                margin: 10px;
+                padding: 10px;
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .seccionAprender {
+        margin: 20px;
+        padding: 20px;
+        h2 {
+            font-size: 22px;
+        }
+        article {
+            font-size: 18px;
+            padding: 5px;
+        }
+    }
+    #accordionExample {
+        padding: 15px 15px;
+    }
+}
+
+@media (max-width:768px) {
+    #carouselExampleCaptions {
+        .carousel-inner {
+            .carousel-caption.d-none.d-md-block {
+                h5 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .seccionNutrientes {
+        margin: 10px;
+        padding: 20px 20px;
+        h2 {
+            font-size: 22px;
+            padding-top: 20px;
+        }
+        #divisorNutrientes {
+            height: 350px;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5px;
+            div {
+                margin: 10px;
+                padding: 10px;
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .seccionAprender {
+        margin: 15px;
+        padding: 15px;
+        h2 {
+            font-size: 22px;
+        }
+        article {
+            font-size: 18px;
+            padding: 5px;
+        }
+    }
+    #accordionExample {
+        padding: 15px 15px;
+        .accordion-item {
+            .accordion-header {
+                .accordion-button {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:426px) and (max-width:626px) {
+    .seccionAprender {
+        display: none;
+    }
+}
+@media (min-width:426px) and (max-width:576px) {
+    .seccionNutrientes {
+        padding: 10px 10px;
+        #divisorNutrientes {
+            height: 400px;
+            div {
+                margin: 5px;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .seccionNutrientes {
+        margin: 5px;
+        padding: 5px 5px;
+        h2 {
+            font-size: 20px;
+        }
+        #divisorNutrientes {
+            height: 375px;
+            flex-direction: column;
+            justify-content: center;
+            div {
+                margin: 5px;
+                padding: 5px;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .seccionAprender {
+        display: none;
+    }
+    #accordionExample {
+        padding: 5px 5px;
+        .accordion-item {
+            .accordion-header {
+                .accordion-button {
+                    font-size: 16px;
+                }
+            }
+            #collapseOne {
+                .accordion-body {
+                    strong {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .seccionNutrientes {
+        h2 {
+            font-size: 18px;
+        }
+        #divisorNutrientes {
+            height: 325px;
+                div {
+                    h3 {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+    }
+    #accordionExample {
+        .accordion-item {
+            .accordion-header {
+                .accordion-button {
+                    font-size: 14px;
+                }
+            }
+            #collapseOne {
+                .accordion-body {
+                    strong {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*--- MEDIA QUERIES EJERCICIO ---*/
+@media (max-width:1024px) {
+    .principalEjercicio {
+        .articuloSegundo {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:924px) {
+    .contenedorEjercicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media (max-width:768px) {
+    .principalEjercicio {
+        .articuloPrimero {
+            .infoArticulo {
+                margin: 20px;
+                h2 {
+                    font-size: 20px;
+                    padding: 5px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+            .imagenArticulo {
+                img {
+                    width: 350px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+    .articuloSegundo {
+        padding: 15px;
+        .beneficios {
+            margin: 15px;
+            h3 {
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            padding: 10px;
+        }
+        .riesgos {
+            margin: 15px;
+            h3 {
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            p {
+                padding: 10px;
+            }
+        }
+    }
+    .secundarioEjercicio {
+        p {
+            font-size: 18px;
+            padding: 5px;
+        }
+    }
+    .contenedorEjercicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        .imagenEjercicio {
+            width: 225px;
+            height: 275px;
+            .infoEjercicio {
+                h3 {
+                    font-size: 16px;
+                }
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:426px) and (max-width:656px) {
+    .principalEjercicio {
+        .articuloPrimero {
+            grid-template-columns: none;
+            .imagenArticulo {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width:426px) and (max-width:526px) {
+    .principalEjercicio {
+        .articuloPrimero {
+            .infoArticulo {
+                margin: 15px;
+                h2 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        .articuloSegundo {
+            padding: 10px;
+            .beneficios {
+                margin: 10px;
+                padding: 5px;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+            .riesgos {
+                margin: 10px;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .secundarioEjercicio {
+        padding: 10px;
+        h2 {
+            font-size: 18px;
+            padding: 5px;
+        }
+        p {
+            font-size: 16px;
+            padding: 0;
+        }
+    }
+    .contenedorEjercicio {
+        .imagenEjercicio {
+            width: 200px;
+            height: 250px;
+            .infoEjercicio {
+                padding: 5px;
+                h3 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .principalEjercicio {
+        .articuloPrimero {
+            grid-template-columns: none;
+            .infoArticulo {
+                margin: 10px;
+                h2 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 14px;
+                    padding: 0;
+                }
+            }
+            .imagenArticulo {
+                display: none;
+            }
+        }
+        .articuloSegundo {
+            display: none;
+        }
+    }
+    .secundarioEjercicio {
+        margin: 10px;
+        padding: 5px;
+        h2 {
+            font-size: 16px;
+            padding: 5px;
+        }
+        p {
+            font-size: 14px;
+            padding: 0;
+        }
+    }
+    .contenedorEjercicio {
+        grid-template-columns: 1fr;
+        .imagenEjercicio {
+            width: 200px;
+            height: 250px;
+            .infoEjercicio {
+                padding: 30px;
+                h3 {
+                    display: none;
+                }
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .principalEjercicio {
+        .articuloPrimero {
+            .infoArticulo {
+                margin: 5px;
+                h2 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .secundarioEjercicio {
+        h2 {
+            font-size: 15px;
+        }
+    }
+    .contenedorEjercicio {
+        padding-top: 20px;
+        .imagenEjercicio {
+            margin: 5px;
+            height: 225px;
+        }
+    }
+}
+
+
+/*--- MEDIA QUERIES CONTACTO ---*/
+@media (max-width:1024px) {
+    .ventas {
+        margin: auto;
+        padding: 10px;
+    }
+}
+
+@media (min-width:769px) and (max-width:919px) {
+    .ventas {
+        flex-direction: column;
+        .mapa {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    form {
+        .tituloFormulario {
+            font-size: 18px;
+        }
+    }
+    .ventas {
+        flex-direction: column;
+        .ventasInfo {
+            p {
+                font-size: 18px;
+            }
+        }
+        .mapa {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (min-width:526px) and (max-width:626px) {
+    .ventas {
+        .ventasInfo {
+            width: 300px;
+        }
+        .mapa {
+            iframe {
+                width: 400px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width:426px) and (max-width:526px) {
+    form {
+        width: 400px;
+    }
+    .ventas {
+        .ventasInfo {
+            width: 275px;
+        }
+        .mapa {
+            iframe {
+                width: 350px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    form {
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        .tituloFormulario {
+            font-size: 16px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        #boton {
+            padding: 5px;
+        }
+    }
+    .ventas {
+        margin: 15px;
+        padding: 30px;
+        .ventasInfo {
+            width: 250px;
+            border: none;
+            h2 {
+                font-size: 18px;
+                padding: 10px;
+            }
+            p {
+                font-size: 16px;
+                padding: 5px;
+            }
+        }
+        .mapa {
+            margin-top: 15px;
+            iframe {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    form {
+        background-color: transparent;
+        width: 300px;
+        padding: 10px 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        .tituloFormulario {
+            font-size: 15px;
+        }
+    }
+    .ventas { 
+        margin: 10px;
+        padding: 20px;
+        .ventasInfo {
+            h2 {
+                font-size: 16px;
+                padding: 5px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        .mapa {
+            iframe {
+                width: 275px;
+                height: 175px;
+            }
+        }
+    }
+}
